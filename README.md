@@ -1,6 +1,7 @@
 # digital_clock
 
-A digital clock made with animating dots
+A digital clock made with animating dots.
 
-## Demo
-<video src="https://user-images.githubusercontent.com/39679158/203992665-fbb9cea9-4fef-4893-a921-5a0bcdbed54f.mp44" />
+## [YouTube Tutorial Link](https://youtu.be/XaeVq1Cbe94)
+
+## [Demo](https://github.com/TechieBlossom/animated_digital_clock_flutter/blob/main/screenshots/result.mp4)

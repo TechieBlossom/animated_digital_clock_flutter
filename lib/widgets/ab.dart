@@ -14,14 +14,14 @@ class AB extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedPositioned.fromRect(
       rect: Rect.fromCenter(
+        width: Sizes.boxSize,
+        height: Sizes.boxSize,
         center: Offset(
           center.dx + Sizes.boxSize / 2,
           center.dy + Sizes.boxSize / 2,
         ),
-        width: Sizes.boxSize,
-        height: Sizes.boxSize,
       ),
-      duration: const Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 800),
       curve: Curves.linearToEaseOut,
       child: const Box(),
     );

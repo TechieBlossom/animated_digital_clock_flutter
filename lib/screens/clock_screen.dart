@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:digital_clock/sizes.dart';
 import 'package:digital_clock/widgets/digit.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -45,8 +44,6 @@ class _ClockScreenState extends State<ClockScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const width = Sizes.digitSize;
-
     return Scaffold(
       body: Center(
         child: Row(
@@ -58,7 +55,7 @@ class _ClockScreenState extends State<ClockScreen> {
             Text(
               ":",
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
             ),
             Digit(number: minute1),
@@ -67,7 +64,7 @@ class _ClockScreenState extends State<ClockScreen> {
             Text(
               ":",
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
             ),
             Digit(number: second1),

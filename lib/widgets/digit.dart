@@ -7,7 +7,7 @@ class Digit extends StatelessWidget {
 
   final String number;
 
-    List<AB> get boxes0 => [
+  List<AB> get boxes0 => [
         for (int i = 0; i <= 2; i++)
           AB(
             center: Offset(Sizes.boxSize * 2 + (i * Sizes.boxSize), 0),

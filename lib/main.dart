@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowMaterialGrid: false,
-      theme: Theme.of(context)
-          .copyWith(textTheme: GoogleFonts.pressStart2pTextTheme()),
+      theme: Theme.of(context).copyWith(
+        textTheme: GoogleFonts.pressStart2pTextTheme(),
+        scaffoldBackgroundColor: Colors.black12,
+      ),
       debugShowCheckedModeBanner: false,
       home: const ClockScreen(),
     );
