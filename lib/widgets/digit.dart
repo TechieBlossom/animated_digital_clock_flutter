@@ -7,33 +7,10 @@ class Digit extends StatelessWidget {
 
   final String number;
 
-  List<AB> get boxes0 => [
+    List<AB> get boxes0 => [
         for (int i = 0; i <= 2; i++)
           AB(
             center: Offset(Sizes.boxSize * 2 + (i * Sizes.boxSize), 0),
-          ),
-        for (int j = 0; j <= 2; j++)
-          for (int i = 0; i <= 1; i++)
-            AB(
-              center: Offset(
-                (i * Sizes.boxSize),
-                Sizes.boxSize * 2 + (j * Sizes.boxSize),
-              ),
-            ),
-        for (int j = 0; j <= 2; j++)
-          for (int i = 0; i <= 1; i++)
-            AB(
-              center: Offset(
-                Sizes.boxSize * 4.8 + (i * Sizes.boxSize),
-                Sizes.boxSize * 2 + (j * Sizes.boxSize),
-              ),
-            ),
-        for (int i = 0; i <= 2; i++)
-          AB(
-            center: Offset(
-              Sizes.boxSize * 2 + (i * Sizes.boxSize),
-              Sizes.digitSize - Sizes.boxSize,
-            ),
           ),
         const AB(center: Offset(Sizes.boxSize, Sizes.boxSize)),
         for (int i = 0; i <= 1; i++)
@@ -46,23 +23,106 @@ class Digit extends StatelessWidget {
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
+              (i * Sizes.boxSize),
+              Sizes.boxSize * 2,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 4.8 + (i * Sizes.boxSize),
+              Sizes.boxSize * 2,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              (i * Sizes.boxSize),
+              Sizes.boxSize * 2 + (1 * Sizes.boxSize),
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 4.8 + (i * Sizes.boxSize),
+              Sizes.boxSize * 2 + (1 * Sizes.boxSize),
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              (i * Sizes.boxSize),
+              Sizes.boxSize * 2 + (2 * Sizes.boxSize),
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 4.8 + (i * Sizes.boxSize),
+              Sizes.boxSize * 2 + (2 * Sizes.boxSize),
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
               Sizes.boxSize + (i * Sizes.boxSize),
               Sizes.boxSize * 5,
             ),
           ),
         const AB(center: Offset(Sizes.boxSize * 4.8, Sizes.boxSize * 5)),
+        for (int i = 0; i <= 2; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2 + (i * Sizes.boxSize),
+              Sizes.digitSize - Sizes.boxSize,
+            ),
+          ),
       ];
 
   List<AB> get boxes1 => [
-        for (int j = 0; j <= 5; j++)
-          for (int i = 0; i <= 1; i++)
-            AB(
-              center: Offset(
-                Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
-                (j * Sizes.boxSize),
-              ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
+              0,
             ),
+          ),
         const AB(center: Offset(Sizes.boxSize * 2, Sizes.boxSize)),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
+              1 * Sizes.boxSize,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
+              2 * Sizes.boxSize,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
+              3 * Sizes.boxSize,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
+              4 * Sizes.boxSize,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
+              Sizes.boxSize * 2.8 + (i * Sizes.boxSize),
+              5 * Sizes.boxSize,
+            ),
+          ),
         for (int i = 0; i <= 5; i++)
           AB(
             center: Offset(
@@ -162,15 +222,15 @@ class Digit extends StatelessWidget {
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
-              Sizes.digitSize - (2 * Sizes.boxSize) + (i * Sizes.boxSize),
-              Sizes.boxSize * 5,
+              0 + (i * Sizes.boxSize),
+              Sizes.digitSize - (2 * Sizes.boxSize),
             ),
           ),
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
-              0 + (i * Sizes.boxSize),
-              Sizes.digitSize - (2 * Sizes.boxSize),
+              Sizes.digitSize - (2 * Sizes.boxSize) + (i * Sizes.boxSize),
+              Sizes.boxSize * 5,
             ),
           ),
         for (int i = 0; i <= 4; i++)
@@ -207,6 +267,13 @@ class Digit extends StatelessWidget {
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
+              Sizes.boxSize * 4 + (i * Sizes.boxSize),
+              Sizes.boxSize * 2,
+            ),
+          ),
+        for (int i = 0; i <= 1; i++)
+          AB(
+            center: Offset(
               0 + (i * Sizes.boxSize),
               Sizes.boxSize * 3,
             ),
@@ -215,14 +282,14 @@ class Digit extends StatelessWidget {
           AB(
             center: Offset(
               Sizes.boxSize * 4 + (i * Sizes.boxSize),
-              Sizes.boxSize * 2,
+              Sizes.boxSize * 3,
             ),
           ),
-        for (int i = 0; i <= 1; i++)
+        for (int i = 0; i <= 6; i++)
           AB(
             center: Offset(
-              Sizes.boxSize * 4 + (i * Sizes.boxSize),
-              Sizes.boxSize * 3,
+              (i * Sizes.boxSize),
+              (4 * Sizes.boxSize),
             ),
           ),
         for (int i = 0; i <= 1; i++)
@@ -237,13 +304,6 @@ class Digit extends StatelessWidget {
             center: Offset(
               Sizes.boxSize * 4 + (i * Sizes.boxSize),
               Sizes.boxSize * 6,
-            ),
-          ),
-        for (int i = 0; i <= 6; i++)
-          AB(
-            center: Offset(
-              (i * Sizes.boxSize),
-              (4 * Sizes.boxSize),
             ),
           ),
       ];
@@ -287,14 +347,14 @@ class Digit extends StatelessWidget {
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
-              Sizes.boxSize * 5 + (i * Sizes.boxSize),
+              (i * Sizes.boxSize),
               Sizes.boxSize * 5,
             ),
           ),
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
-              (i * Sizes.boxSize),
+              Sizes.boxSize * 5 + (i * Sizes.boxSize),
               Sizes.boxSize * 5,
             ),
           ),
@@ -353,14 +413,14 @@ class Digit extends StatelessWidget {
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
-              Sizes.boxSize * 5 + (i * Sizes.boxSize),
+              (i * Sizes.boxSize),
               Sizes.boxSize * 5,
             ),
           ),
         for (int i = 0; i <= 1; i++)
           AB(
             center: Offset(
-              (i * Sizes.boxSize),
+              Sizes.boxSize * 5 + (i * Sizes.boxSize),
               Sizes.boxSize * 5,
             ),
           ),
